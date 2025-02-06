@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life in Northern Cyprus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Student Life in Northern Cyprus</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg" class="flag" alt="Ugandan Flag">
+</header>
+
+
+<section class="introduction">
+    <h1>Welcome to Northern Cyprus Student Life</h1>
+    <p>Your ultimate guide to living and studying in Northern Cyprus.</p>
+</section>
+
+
+<!-- Services Section -->
+<div class="services">
+    <!-- Accommodation Service Card -->
+    <div class="service-card" onclick="toggleDropdown('dropdown1')">
+        <h2>Accommodation</h2>
+        <div class="dropdown" id="dropdown1">
+            <a href="#on-campus">On Campus (Dormitory)</a>
+            <a href="#off-campus">Off Campus (Apartment)</a>
+        </div>
+    </div>
+
+    <!-- Campus Services Service Card -->
+    <div class="service-card" onclick="toggleDropdown('dropdown2')">
+        <h2>Campus Services</h2>
+        <div class="dropdown" id="dropdown2">
+            <a href="#transportation">Transportation</a>
+            <a href="#food-services">Food Services</a>
+            <a href="#health-services">Health Services</a>
+        </div>
+    </div>
+
+    <!-- Safety Service Card -->
+    <div class="service-card" onclick="toggleDropdown('dropdown3')">
+        <h2>Safety</h2>
+        <div class="dropdown" id="dropdown3">
+            <a href="#">Campus Security</a>
+        </div>
+    </div>
+
+    <!-- Food and Culture Service Card -->
+    <div class="service-card" onclick="toggleDropdown('dropdown4')">
+        <h2>Sustenance</h2>
+        <div class="dropdown" id="dropdown4">
+            <a href="#">Food in Northern Cyprus</a>
+        </div>
+    </div>
+
+    <!-- Living Expenses Service Card -->
+    <div class="service-card" onclick="toggleDropdown('dropdown5')">
+        <h2>Living Expenses</h2>
+        <div class="dropdown" id="dropdown5">
+            <a href="#">Cost of Living in Northern Cyprus</a>
+        </div>
+    </div>
+
+    <!-- Conclusion Service Card -->
+    <div class="service-card" onclick="toggleDropdown('dropdown6')">
+        <h2>Conclusion</h2>
+        <div class="dropdown" id="dropdown6">
+            <a href="#">Why study in Northern Cyprus</a>
+        </div>
+    </div>
+</div>
+
+<!-- On Campus Accommodation Section -->
+<div id="on-campus" class="accommodation-section">
+    <h2>On Campus Accommodation</h2>
+    <p>
+        Dormitories provide on-campus housing with fully furnished rooms, available as either singles or doubles. Unlike many off-campus apartments and a few other dormitory options, the accommodation fee covers all utilities, including electricity, water, and internet, making it a convenient and cost-effective choice for students.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Convenient access to campus facilities</td>
+                <td>Less privacy in shared dorms</td>
+            </tr>
+            <tr>
+                <td>All utilities included in the fee</td>
+                <td>Potential for noise and disturbances</td>
+            </tr>
+            <tr>
+                <td>No additional commuting costs</td>
+                <td>Limited freedom in guest policies</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+ <!-- Adding Images -->
+ <div class="image-gallery">
+    <h3>On-Campus (Dorms)</h3>
+
+    <!-- Image 1 -->
+    <div class="image-item">
+      <img src="c:\Users\nuwag\Downloads\webpage\65_14.jpg" alt="Dorm room with two beds and modern design" />
+    </div>
+
+    <!-- Image 2 -->
+    <div class="image-item">
+      <img src="c:\Users\nuwag\Downloads\webpage\2022-04-11-alfam-vista-2-kislik-oda-750x425-2.webp" alt="Student working at a desk in an apartment" />
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Styles for Image Gallery -->
+<style>
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .image-item {
+    flex: 1 1 300px;
+    text-align: center;
+  }
+  .image-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+  }
+</style>
+
+<!-- Off Campus Accommodation Section -->
+<div id="off-campus" class="accommodation-section">
+    <h2>Off Campus Accommodation</h2>
+    <p>
+        Students may choose to live off campus in apartments, which often provide more independence and flexibility. These apartments can vary in size and amenities, allowing students to select accommodations that suit their lifestyle and budget.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>More privacy and independence</td>
+                <td>Utilities are not included</td>
+            </tr>
+            <tr>
+                <td>Variety of housing options</td>
+                <td>Farther from campus facilities</td>
+            </tr>
+            <tr>
+                <td>Opportunity to live with friends</td>
+                <td>More responsibility for maintenance</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Adding Images -->
+<div class="image-gallery">
+    <h3>Off-Campus (Apartments)</h3>
+
+    <!-- Image 1 -->
+    <div class="image-item">
+      <img src="c:\Users\nuwag\Downloads\magusa-dau-kiralik-daire-202407001569360005493827RBPKH3Y.jpg" alt="Apartment living room" />
+    </div>
+
+    <!-- Image 2 -->
+    <div class="image-item">
+      <img src="c:\Users\nuwag\Downloads\dsc-1268_600_400.jpeg" alt="Student working at a desk in an apartment" />
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Transportation Services Section -->
+<div id="transportation" class="service-section">
+    <h2>Transportation Services</h2>
+    <p>Universities in Northern Cyprus provide shuttle buses specifically for their students, transporting them from their residences to various campus locations, including classrooms and other facilities. These buses operate on a scheduled timetable, ensuring students can plan their commutes conveniently.</p>
+</div>
+
+<!-- Adding Images -->
+<div class="image-gallery">
+    <h3>University buses</h3>
+
+    <!-- Image 1 -->
+    <div class="image-item">
+      <img src="c:\Users\nuwag\Downloads\ulasim-transportation.jpg" alt="Apartment living room" />
+    </div>
+
+    <!-- Image 2 -->
+    <div class="image-item">
+      <img src="c:\Users\nuwag\Downloads\img_1147_3.jpg" alt="Student working at a desk in an apartment" />
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Food Services Section -->
+<div id="food-services" class="service-section">
+    <h2>Food Services</h2>
+    <p>Universities here also offer a variety of on-campus dining options, including restaurants and cafeterias. These facilities serve a wide range of dishes, with options that span from traditional Turkish cuisine to international meals, catering to diverse tastes and dietary preferences.</p>
+</div>
+
+<div class="image-gallery">
+    <h3>Food services</h3>
+
+    <!-- Image 1 -->
+    <div class="image-item">
+      <img src="c:\Users\nuwag\Desktop\SL\c851b9def4cf1fb0cac9fefc6178a423.jpg" alt="On-Campus dining" />
+    </div>
+
+    <!-- Image 2 -->
+    <div class="image-item">
+      <img src="c:\Users\nuwag\Desktop\SL\560095716_-cpsEImt8Fg4vfOCCdPeCdKqW_Co3isGxOaNRGIDPZs.jpg" alt="Famous student restaurant" />
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Health Services Section -->
+<div id="health-services" class="service-section">
+    <h2>Health Services</h2>
+    <p>Universities also ensure students have access to free basic healthcare services. This includes general medical attention, outpatient treatment, and care for minor illnesses or injuries, providing students with essential support for their health and well-being.</p>
+</div>
+
+<div class="image-gallery">
+    <h3>On-Campus Hospital</h3>
+
+    <!-- Image 1 -->
+    <div class="image-item">
+      <img src="c:\Users\nuwag\Desktop\SL\img_14801_3.jpg" alt="On-Campus Hospital" />
+    </div>
+  </div>
+</section>
+
+<!-- Campus Security Section -->
+<div id="Campus Security" class="service-section">
+    <h2>Campus Security</h2>
+    <p>Safety is a top priority for international students, and North Cyprus is known for being a safe destination. The country has a low crime rate, and the local community is welcoming and supportive of international students. Universities in North Cyprus also have security measures in place to ensure the safety of their students. However, it is always important to exercise caution and follow basic safety guidelines, as you would in any other country.
+    </p>
+</div>
+
+<div class="image-gallery">
+    <h3>Student affairs unit</h3>
+
+    <!-- Image 1 -->
+    <div class="image-item">
+      <img src="c:\Users\nuwag\Desktop\SL\security-affairs-unit-guvenlik-isleri-sube-amirligi.jpg" alt="24 /7 Security" />
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Food in Northern Cyprus Section -->
+<div id="Food in Northern Cyprus" class="service-section"></div>
+    <h2>Food in Northern Cyprus</h2>
+    <p>
+        As previously mentioned, universities in Northern Cyprus provide a variety of cafeterias and restaurants, offering students a range of dining options from luxurious to budget-friendly establishments. This flexibility allows students to tailor their dining experiences according to their preferences and financial situations.
+        However, many Ugandan students opt to prepare meals from home as a strategic way to manage their expenses. Common staples include groundnuts, rice, beans, and posho, which can be enhanced with a variety of spices. By utilizing the cooking facilities in their dorm rooms or apartments, these students can enjoy traditional meals while effectively minimizing the costs associated with external dining options.
+    </p>
+</div>
+
+<div class="image-gallery">
+    <h3>Traditional Turkish Cuisine</h3>
+
+    <!-- Image 1 -->
+    <div class="image-item">
+      <img src="c:\Users\nuwag\Desktop\SL\Traditional-Turkish-cuisine.jpg" alt="Traditional Turkish Cuisine" />
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Cost of living in Northern Cyprus -->
+<div id="Cost of living in Northern Cyprus" class="service-section"></div>
+    <h2>Cost of living in Northern Cyprus</h2>
+    <p>The cost of living in North Cyprus can vary depending on individual preferences and lifestyle choices. On average, international students can expect to spend between $350 and $500 per month. This amount covers expenses such as accommodation, meals, transportation, and other daily necessities. However, it is important to note that these figures are approximate and can vary depending on personal spending habits.
+    </p>
+</div>
+
+<!-- Conclusion-->
+ <div id="Conlusion" class="service-section"></div>
+ <h2>Why study in Northern Cyprus</h2>
+ <p>Living in North Cyprus as an international student offers a unique and enriching experience. The affordable cost of living, vibrant cultural scene, and diverse social activities make it an attractive destination for students from around the world. With a range of housing options, access to quality healthcare, and numerous entertainment opportunities, students can make the most of their time in North Cyprus. Whether you are interested in pursuing your studies or simply exploring a new culture, North Cyprus has much to offer.
+    </p>
+
+    <footer>
+        <p>2024 Northern Cyprus Student Life | All Rights Reserved</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/YOUR_INSTAGRAM_LINK" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="30" height="30">
+            </a>
+            <a href="https://twitter.com/YOUR_TWITTER_LINK" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter" width="30" height="30">
+            </a>
+        </div>
+    </footer>
+    
+
+<script>
+    // Function to handle toggling dropdown
+    function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        const allDropdowns = document.querySelectorAll('.dropdown');
+
+        // Close all dropdowns
+        allDropdowns.forEach(menu => {
+            if (menu !== dropdown) {
+                menu.classList.remove('show-dropdown');
+            }
+        });
+
+        // Toggle the clicked dropdown
+        dropdown.classList.toggle('show-dropdown');
+    }
+
+    // Smooth scrolling for links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    window.onclick = function(event) {
+        if (!event.target.matches('.service-card')) {
+            const allDropdowns = document.querySelectorAll('.dropdown');
+            allDropdowns.forEach(menu => {
+                menu.classList.remove('show-dropdown');
+            });
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
